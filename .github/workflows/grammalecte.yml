@@ -12,4 +12,9 @@ jobs:
       - name: Extraction des fichiers
         uses: actions/checkout@v5
       - name: Vérification de la grammaire/orthographe
-        run: python -m grammalint -i recettes/**/*.md
+        run: |
+          # FIXME: Switch to python -m grammalint -i recettes/**/*.md once ready
+          cd recettes
+          for recette in $(ls *.md); do
+            python -m grammalint -i ${recette}
+          done
