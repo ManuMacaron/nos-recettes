@@ -12,7 +12,7 @@ jobs:
       - name: Extraction des fichiers
         uses: actions/checkout@v5
       - name: Exécution de grammalint
-        run: python -m grammalint -i recettes/**/*.md -o report.json
+        run: python -m grammalint -i recettes/*.md -o report.json
       - name: Mise en ligne des rapports JSON
         uses: actions/upload-artifact@v5
         with:
