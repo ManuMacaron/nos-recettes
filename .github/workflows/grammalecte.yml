@@ -16,5 +16,12 @@ jobs:
           # FIXME: Switch to python -m grammalint -i recettes/**/*.md once ready
           cd recettes
           for recette in $(ls *.md); do
-            python -m grammalint -i ${recette}
+            python -m grammalint -i ${recette} -o ${recette}.json
           done
+      - name: Mise en ligne des rapports JSON
+        uses: actions/upload-artifact@v5
+        with:
+          name: grammalint-reports
+          path: recettes/*.json
+          retention-days: 7
+        if: failure()
