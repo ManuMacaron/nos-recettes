@@ -3,8 +3,8 @@ titre: "Crêpes classiques"
 description: "Une recette simple et rapide pour des crêpes moelleuses."
 auteur: "ManuMacaron"
 date: 2025-10-06
-temps_preparation: "10 min"
-temps_cuisson: "15 min"
+temps_preparation: "10 min"
+temps_cuisson: "15 min"
 temps_repos: "—"
 difficulte: "Facile"
 nombre_personnes: 4
@@ -28,5 +28,5 @@ conseils:
 
 1. Mélangez la farine, le sucre et le sel.
 2. Ajoutez les œufs puis le lait progressivement en fouettant.
-3. Laissez reposer 30 min.
+3. Laissez reposer 30 min.
 4. Faites cuire les crêpes dans une poêle chaude légèrement huilée.
