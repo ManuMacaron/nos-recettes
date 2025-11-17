@@ -12,8 +12,7 @@ jobs:
       - name: Extraction des fichiers
         uses: actions/checkout@v5
       - name: Exécution de grammalint
-        # FIXME: Bring back the ** glob
-        run: python -m grammalint -i recettes/*.md -o report.json --skip-frontmatter-keys auteur
+        run: python -m grammalint -i recettes/**/*.md -o report.json --skip-frontmatter-keys auteur
       - name: Mise en ligne des rapports JSON
         uses: actions/upload-artifact@v5
         with:
