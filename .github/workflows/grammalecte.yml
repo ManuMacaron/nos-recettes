@@ -12,16 +12,11 @@ jobs:
       - name: Extraction des fichiers
         uses: actions/checkout@v5
       - name: Exécution de grammalint
-        run: |
-          # FIXME: Switch to python -m grammalint -i recettes/**/*.md once ready
-          cd recettes
-          for recette in $(ls *.md); do
-            python -m grammalint -i ${recette} -o ${recette}.json
-          done
+        run: python -m grammalint -i recettes/**/*.md -o report.json --skip-frontmatter-keys author
       - name: Mise en ligne des rapports JSON
         uses: actions/upload-artifact@v5
         with:
           name: grammalint-reports
-          path: recettes/*.json
+          path: recettes/report.json
           retention-days: 7
         if: failure()
