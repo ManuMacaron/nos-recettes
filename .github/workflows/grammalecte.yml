@@ -11,7 +11,7 @@ jobs:
         run: python -m pip install git+https://gitlab.in2p3.fr/sonny.lion/grammalint.git
       - name: Extraction des fichiers
         uses: actions/checkout@v5
-      - name: Vérification de la grammaire/orthographe
+      - name: Exécution de grammalint
         run: |
           # FIXME: Switch to python -m grammalint -i recettes/**/*.md once ready
           cd recettes
