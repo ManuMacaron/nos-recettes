@@ -1,5 +1,5 @@
 ---
-titre: "Crêpes classiques normandes"
+titre: "Crêpes classiques bretonnes"
 description: "Une recette simple et rapide pour des crêpes moelleuses."
 auteur: "ManuMacaron"
 date: 2025-10-06
