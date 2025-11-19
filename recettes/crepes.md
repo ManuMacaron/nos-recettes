@@ -3,8 +3,8 @@ titre: "Crêpes classiques"
 description: "Une recette simple et rapide pour des crêpes moelleuses."
 auteur: "ManuMacaron"
 date: 2025-10-06
-temps_de_préparation: "10 min"
-temps_de_cuisson: "15 min"
+temps_de_préparation: "10 min"
+temps_de_cuisson: "15 min"
 temps_de_repos: ""
 difficulté: "Facile"
 portions: 4 personnes
